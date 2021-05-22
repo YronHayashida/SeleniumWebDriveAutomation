@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="17.957">
+    <testsuite name="Create nem Account" time="17.957">
+      <testcase name="Access page to create account" classname="Create nem Account" time="8.565">
+        <error>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href="javascript:void(0)" role="link" class="create-new-account ng-scope" translate="CREATE_NEW_ACCOUNT" data-ng-click="createNewAccount()"&gt;...&lt;/a&gt; is not clickable at point (509, 502). Other element would receive the click: &lt;a href="javascript:void(0)" role="link" class="forgot-Passwowd ng-scope" translate="FORGOT_PASSWORD" data-ng-click="forgotPassword()"&gt;...&lt;/a&gt;
+  (Session info: chrome=90.0.4430.212)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LOWCOST02', ip: '172.20.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\YRONHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05ef6ad9a29a616bad4e0f608e082f69&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;
+	at br.com.AutomationWeb.PageObject.HomePage.VistiCreateNewAccount(HomePage.java:28)&#13;
+	at br.com.AutomationWeb.steps.CreateNewAccountSteps.click_in_create_new_account(CreateNewAccountSteps.java:33)&#13;
+	at ✽.click in create new account(classpath:feature/CreateNewAccount.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Create a New Account" classname="Create nem Account" time="9.39">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'insert adress' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("insert adress")
+public void insert_adress() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

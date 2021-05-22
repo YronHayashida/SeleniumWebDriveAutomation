@@ -1,0 +1,41 @@
+package br.com.AutomationWeb.steps;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import br.com.AutomationWeb.PageObject.Browser;
+import br.com.AutomationWeb.PageObject.CreateNewAccountPage;
+import br.com.AutomationWeb.PageObject.HomePage;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class CreateNewAccountSteps {
+	private WebDriver navegador;
+
+	private Browser browser;
+	private HomePage homePage;
+	private CreateNewAccountPage createNewAccountPage;
+	
+	@Before
+	@Given("the user acces the menu user")
+	public void acess_the_website() {
+		browser = new Browser();
+		homePage = browser.getHomePage();
+	}
+	@When("click in create new account")
+	public void the_user_acces_the_menu_user() {
+		createNewAccountPage =this.homePage.VistiCreateNewAccount();
+	}
+
+	@Then("should access the Create account Page")
+	public void should_access_the_create_account_page() {
+		Assert.assertTrue(this.createNewAccountPage.IsOnCreateNewAcountPage());
+	}
+
+}

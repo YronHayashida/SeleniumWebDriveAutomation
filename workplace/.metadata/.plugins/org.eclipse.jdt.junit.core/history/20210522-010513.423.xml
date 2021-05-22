@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="23.797">
+    <testsuite name="Create nem Account" time="23.797">
+      <testcase name="Access page to create account" classname="Create nem Account" time="9.149"/>
+      <testcase name="Create a New Account" classname="Create nem Account" time="14.648"/>
+    </testsuite>
+  </testsuite>
+</testrun>

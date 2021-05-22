@@ -1,0 +1,75 @@
+package br.com.AutomationWeb.PageObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.github.javafaker.Faker;
+
+public class CreateNewAccountPage {
+
+	private WebDriver driver;
+	private Faker random;
+
+	private static String PAGE_URL = "http://advantageonlineshopping.com/#/register";
+
+	CreateNewAccountPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public void visita() {
+		driver.get(PAGE_URL);
+	}
+
+	public boolean IsOnCreateNewAcountPage() {
+		return this.driver.getCurrentUrl().endsWith("/register");
+	}
+	
+	public void RegisterData(String data) {
+		random = new Faker();
+		this.WaitLoadCreateNewAccount();
+		
+		switch (data.toLowerCase()) {
+		case "accounts detail":
+			WebElement cmpUserName = driver.findElement(By.name("usernameRegisterPage"));
+			WebElement cmpEmail = driver.findElement(By.name("emailRegisterPage"));
+			WebElement cmpPassword = driver.findElement(By.name("passwordRegisterPage"));
+			WebElement cmpConfirmPassword = driver.findElement(By.name("confirm_passwordRegisterPage"));
+			
+			cmpUserName.sendKeys("user0102");
+			cmpEmail.sendKeys(random.internet().emailAddress());
+			cmpPassword.sendKeys("Senha@13");
+			cmpConfirmPassword.sendKeys("Senha@13");
+			
+		case "personal details":
+			WebElement cmpFirstName = driver.findElement(By.name("first_nameRegisterPage"));
+			WebElement cmpLastName = driver.findElement(By.name("last_nameRegisterPage"));
+			WebElement cmpPhoneNumber = driver.findElement(By.name("phone_numberRegisterPage"));
+		
+			cmpFirstName.sendKeys(random.name().firstName());
+			cmpLastName.sendKeys(random.name().lastName());
+			cmpPhoneNumber.sendKeys(random.phoneNumber());
+		
+		case "address":
+			WebElement cmpCountry = driver.findElement(By.name("countryListboxRegisterPage"));
+			WebElement cmpity = driver.findElement(By.name("cityRegisterPage"));
+			WebElement cmpAddress = driver.findElement(By.name("addressRegisterPage"));
+			WebElement cmpState = driver.findElement(By.name("state_/_province_/_regionRegisterPage"));
+			WebElement cmpPostalCode = driver.findElement(By.name("postal_codeRegisterPage"));
+		}
+	}
+
+	public HomePage CreateANewAccount() {
+		WebElement checkboxAgree = driver.findElement(By.name("i_agree"));
+		WebElement btnRegister = driver.findElement(By.name("id register_btnundefined"));
+		return new HomePage(driver);
+	}
+
+	public void WaitLoadCreateNewAccount() {
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("register_btnundefined")));
+	}
+
+}

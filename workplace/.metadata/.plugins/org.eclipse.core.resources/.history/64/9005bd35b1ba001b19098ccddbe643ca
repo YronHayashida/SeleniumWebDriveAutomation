@@ -1,0 +1,15 @@
+Feature: Create nem Account
+  I want to create a new account
+
+	Background: 
+		Given the user acces the menu user
+     
+  
+  Scenario: Access page to create account
+   When  click in create new account
+   Then should access the Create account Page
+
+ 	Scenario: Create a New Account
+ 		When  click in create new account
+ 		And insert "Accounts Details" 
+ 		And insert "Personal Details"

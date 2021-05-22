@@ -1,0 +1,5 @@
+package br.com.AutomationWeb.PageObject;
+
+public class Browser {
+
+}

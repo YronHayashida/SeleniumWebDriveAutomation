@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="18.657">
+    <testsuite name="Create nem Account" time="18.657">
+      <testcase name="Access page to create account" classname="Create nem Account" time="8.789"/>
+      <testcase name="Create a New Account" classname="Create nem Account" time="9.868">
+        <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:87)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:42)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:53)&#13;
+	at br.com.AutomationWeb.steps.CreateNewAccountSteps.should_access_the_new_account(CreateNewAccountSteps.java:38)&#13;
+	at ✽.should access the home Page(classpath:feature/CreateNewAccount.feature:18)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

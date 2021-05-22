@@ -1,0 +1,6 @@
+package br.com.AutomationWeb;
+
+@RunWith(Cucumber.class)
+public class CucumberRunner {
+
+}

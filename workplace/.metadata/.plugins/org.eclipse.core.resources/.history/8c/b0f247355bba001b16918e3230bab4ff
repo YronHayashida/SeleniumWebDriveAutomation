@@ -1,0 +1,8 @@
+package br.com.AutomationWeb;
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(feature ="Classpath::feature")
+public class CucumberRunner {
+
+}

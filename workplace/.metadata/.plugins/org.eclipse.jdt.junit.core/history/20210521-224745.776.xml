@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="44.659">
+    <testsuite name="Create nem Account" time="44.659">
+      <testcase name="Access page to create account" classname="Create nem Account" time="44.658">
+        <error>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/login-modal/div/div/div[3]/a[2] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LOWCOST02', ip: '172.20.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\YRONHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63276}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dfc1b82a99f4da47962b18606d72a33&#13;
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)&#13;
+	at br.com.AutomationWeb.PageObject.HomePage.WaitLoadMenuUser(HomePage.java:41)&#13;
+	at br.com.AutomationWeb.PageObject.HomePage.VistiCreateNewAccount(HomePage.java:23)&#13;
+	at br.com.AutomationWeb.steps.CreateNewAccountSteps.the_user_acces_the_menu_user(CreateNewAccountSteps.java:33)&#13;
+	at ✽.click in create new account(classpath:feature/CreateNewAccount.feature:8)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

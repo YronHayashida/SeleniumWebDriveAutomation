@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="20.944">
+    <testsuite name="Create nem Account" time="20.944">
+      <testcase name="Access page to create account" classname="Create nem Account" time="11.915"/>
+      <testcase name="Create a New Account" classname="Create nem Account" time="9.029">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'insert adress' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("insert adress")
+public void insert_adress() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

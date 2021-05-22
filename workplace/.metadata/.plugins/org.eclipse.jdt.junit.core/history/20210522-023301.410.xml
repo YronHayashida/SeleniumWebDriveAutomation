@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="16.616">
+    <testsuite name="Create nem Account" time="16.616">
+      <testcase name="Access page to create account" classname="Create nem Account" time="8.662"/>
+      <testcase name="Create a New Account" classname="Create nem Account" time="7.954">
+        <error>java.lang.NullPointerException: Cannot invoke "com.github.javafaker.Faker.internet()" because "this.random" is null&#13;
+	at br.com.AutomationWeb.PageObject.CreateNewAccountPage.RegisterAccountDetails(CreateNewAccountPage.java:58)&#13;
+	at br.com.AutomationWeb.steps.CreateNewAccountSteps.insertaccounts_details(CreateNewAccountSteps.java:44)&#13;
+	at ✽.insert accounts details(classpath:feature/CreateNewAccount.feature:12)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

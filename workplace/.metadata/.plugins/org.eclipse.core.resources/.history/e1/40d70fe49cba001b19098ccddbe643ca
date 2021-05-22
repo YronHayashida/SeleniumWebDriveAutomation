@@ -1,0 +1,43 @@
+package br.com.AutomationWeb.PageObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class HomePage {
+
+
+	private WebDriver driver;
+	
+	private static String URL_HOME_PAGE = "http://advantageonlineshopping.com/#/";
+
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public CreateNewAccountPage VistiCreateNewAccount() {
+    	driver.get(URL_HOME_PAGE);
+    	
+        WebElement btnMenuUser = driver.findElement(By.id("menuUser"));
+        
+        btnMenuUser.click();
+        
+        return new CreateNewAccountPage(driver);
+    }
+	/*
+	 * public LeiloesPage realizaLoginComoFulano() { return
+	 * realizaLoginComo("fulano", "pass"); }
+	 * 
+
+	 * 
+	 * public void esperaCarregarPaginaDeLeiloes() { WebDriverWait wait = new
+	 * WebDriverWait(driver,2);
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+	 * xpath("//h1[contains(text(),'Todos leilões')]"))); }
+	 * 
+	 * public boolean estaNaPaginaDeLoginComErro() {
+	 * System.out.println(this.driver.getCurrentUrl()); return
+	 * this.driver.getCurrentUrl().endsWith("/login") ||
+	 * this.driver.getCurrentUrl().endsWith("/login?error"); }
+	 */
+}

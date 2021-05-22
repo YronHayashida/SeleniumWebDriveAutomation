@@ -1,0 +1,9 @@
+Feature: Create nem Account
+  I want to create a new account
+
+  @tag1
+  Scenario: Access page to create account
+    Given acess the website
+    When the user acces the menu user
+    And click in create new account
+    Then should access the Create account Page

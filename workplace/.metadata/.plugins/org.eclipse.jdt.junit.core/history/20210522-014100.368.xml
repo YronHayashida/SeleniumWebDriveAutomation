@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="25.968">
+    <testsuite name="Create nem Account" time="25.968">
+      <testcase name="Access page to create account" classname="Create nem Account" time="8.699"/>
+      <testcase name="Create a New Account" classname="Create nem Account" time="17.269">
+        <error>org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=id register_btnundefined
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LOWCOST02', ip: '172.20.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)&#13;
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at br.com.AutomationWeb.PageObject.CreateNewAccountPage.CreateANewAccount(CreateNewAccountPage.java:73)&#13;
+	at br.com.AutomationWeb.steps.CreateNewAccountSteps.register_the_new_account(CreateNewAccountSteps.java:50)&#13;
+	at ✽.Register the new Account(classpath:feature/CreateNewAccount.feature:15)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

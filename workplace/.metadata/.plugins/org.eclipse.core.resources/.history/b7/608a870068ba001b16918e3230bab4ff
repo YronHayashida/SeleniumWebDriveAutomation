@@ -1,0 +1,36 @@
+package br.com.AutomationWeb.steps;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class CreateNewAccountSteps {
+	WebDriver navegador;
+	@Given("acess the website")
+	public void acess_the_website() {
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		WebDriver navegador = new ChromeDriver();
+		navegador.navigate().to("http://advantageonlineshopping.com/#/");
+		navegador.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	@When("the user acces the menu user")
+	public void the_user_acces_the_menu_user() {
+		navegador.findElement(By.id("menuUser")).click();
+	}
+	@When("click in create new account")
+	public void click_in_create_new_account() {
+		navegador.findElement(By.id("sign_in_btnundefined")).click();
+
+	}
+	@Then("should access the Create account Page")
+	public void should_access_the_create_account_page() {
+
+	}
+
+}

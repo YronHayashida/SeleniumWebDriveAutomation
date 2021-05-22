@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun br.com.AutomationWeb.CucumberRunner" project="AutomationSeleniumWeb" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="20.089">
+    <testsuite name="Create nem Account" time="20.089">
+      <testcase name="Access page to create account" classname="Create nem Account" time="12.149"/>
+      <testcase name="Create a New Account" classname="Create nem Account" time="7.94">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'insert "Account Details"' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("insert {string}")
+public void insert(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("finalize registration")
+public void finalize_registration() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

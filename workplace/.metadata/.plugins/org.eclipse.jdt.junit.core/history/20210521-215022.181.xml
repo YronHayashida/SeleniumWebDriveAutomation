@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CucumberRunner" project="AutomationSeleniumWeb" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="br.com.AutomationWeb.CucumberRunner" time="4.415">
+    <testsuite name="Create nem Account" time="4.415">
+      <testcase name="Access page to create account" classname="Create nem Account" time="4.415">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.navegador" is null&#13;
+	at br.com.AutomationWeb.steps.CreateNewAccountSteps.the_user_acces_the_menu_user(CreateNewAccountSteps.java:27)&#13;
+	at ✽.the user acces the menu user(classpath:feature/CreateNewAccount.feature:7)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
